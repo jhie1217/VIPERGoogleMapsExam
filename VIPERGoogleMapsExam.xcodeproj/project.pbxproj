@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07FC02AE5ADEFC8101540746 /* Pods_VIPERGoogleMapsExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDE8153C648A62643D94C9 /* Pods_VIPERGoogleMapsExam.framework */; };
 		089656132AFCDE3D0063D08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656122AFCDE3D0063D08C /* AppDelegate.swift */; };
 		089656152AFCDE3D0063D08C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656142AFCDE3D0063D08C /* SceneDelegate.swift */; };
-		089656172AFCDE3D0063D08C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656162AFCDE3D0063D08C /* ViewController.swift */; };
-		0896561A2AFCDE3D0063D08C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089656182AFCDE3D0063D08C /* Main.storyboard */; };
 		0896561C2AFCDE3E0063D08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0896561B2AFCDE3E0063D08C /* Assets.xcassets */; };
 		0896561F2AFCDE3E0063D08C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0896561D2AFCDE3E0063D08C /* LaunchScreen.storyboard */; };
+		089656292AFCDE9D0063D08C /* LocationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656282AFCDE9D0063D08C /* LocationProtocol.swift */; };
+		0896562E2AFCDFF90063D08C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896562D2AFCDFF90063D08C /* Location.swift */; };
+		089656322AFCE17C0063D08C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656312AFCE17C0063D08C /* LocationCell.swift */; };
+		089656342AFCE2CE0063D08C /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656332AFCE2CE0063D08C /* LocationsViewController.swift */; };
+		089656372AFCE4AD0063D08C /* LocationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656362AFCE4AD0063D08C /* LocationsInteractor.swift */; };
+		0896563A2AFCE64D0063D08C /* LocationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656392AFCE64D0063D08C /* LocationsPresenter.swift */; };
+		0896563D2AFCE6F70063D08C /* LocationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896563C2AFCE6F70063D08C /* LocationsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07FDE8153C648A62643D94C9 /* Pods_VIPERGoogleMapsExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERGoogleMapsExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0896560F2AFCDE3D0063D08C /* VIPERGoogleMapsExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERGoogleMapsExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089656122AFCDE3D0063D08C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089656142AFCDE3D0063D08C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		089656162AFCDE3D0063D08C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		089656192AFCDE3D0063D08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0896561B2AFCDE3E0063D08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0896561E2AFCDE3E0063D08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		089656202AFCDE3E0063D08C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089656282AFCDE9D0063D08C /* LocationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProtocol.swift; sourceTree = "<group>"; };
+		0896562D2AFCDFF90063D08C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		089656312AFCE17C0063D08C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		089656332AFCE2CE0063D08C /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		089656362AFCE4AD0063D08C /* LocationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsInteractor.swift; sourceTree = "<group>"; };
+		089656392AFCE64D0063D08C /* LocationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenter.swift; sourceTree = "<group>"; };
+		0896563C2AFCE6F70063D08C /* LocationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRouter.swift; sourceTree = "<group>"; };
+		A2759FAFFCEABA0D70EDC136 /* Pods-VIPERGoogleMapsExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERGoogleMapsExam.release.xcconfig"; path = "Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam.release.xcconfig"; sourceTree = "<group>"; };
+		FFABA842A60B679F6D51117E /* Pods-VIPERGoogleMapsExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERGoogleMapsExam.debug.xcconfig"; path = "Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FC02AE5ADEFC8101540746 /* Pods_VIPERGoogleMapsExam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051D1BAD36DF21716BEE4F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07FDE8153C648A62643D94C9 /* Pods_VIPERGoogleMapsExam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		089656062AFCDE3D0063D08C = {
 			isa = PBXGroup;
 			children = (
 				089656112AFCDE3D0063D08C /* VIPERGoogleMapsExam */,
 				089656102AFCDE3D0063D08C /* Products */,
+				8C5F3B5AC84803C138472219 /* Pods */,
+				051D1BAD36DF21716BEE4F4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +83,100 @@
 			children = (
 				089656122AFCDE3D0063D08C /* AppDelegate.swift */,
 				089656142AFCDE3D0063D08C /* SceneDelegate.swift */,
-				089656162AFCDE3D0063D08C /* ViewController.swift */,
-				089656182AFCDE3D0063D08C /* Main.storyboard */,
+				089656262AFCDE6C0063D08C /* Modules */,
 				0896561B2AFCDE3E0063D08C /* Assets.xcassets */,
 				0896561D2AFCDE3E0063D08C /* LaunchScreen.storyboard */,
 				089656202AFCDE3E0063D08C /* Info.plist */,
 			);
 			path = VIPERGoogleMapsExam;
+			sourceTree = "<group>";
+		};
+		089656262AFCDE6C0063D08C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				089656272AFCDE800063D08C /* Location */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		089656272AFCDE800063D08C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				0896562A2AFCDF180063D08C /* Protocol */,
+				0896562F2AFCE1540063D08C /* View */,
+				089656352AFCE4840063D08C /* Interactor */,
+				089656382AFCE6330063D08C /* Presenter */,
+				0896562C2AFCDFE60063D08C /* Entity */,
+				0896563B2AFCE6E10063D08C /* Router */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		0896562A2AFCDF180063D08C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				089656282AFCDE9D0063D08C /* LocationProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0896562C2AFCDFE60063D08C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0896562D2AFCDFF90063D08C /* Location.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0896562F2AFCE1540063D08C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				089656302AFCE1660063D08C /* Cell */,
+				089656332AFCE2CE0063D08C /* LocationsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		089656302AFCE1660063D08C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				089656312AFCE17C0063D08C /* LocationCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		089656352AFCE4840063D08C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				089656362AFCE4AD0063D08C /* LocationsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		089656382AFCE6330063D08C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				089656392AFCE64D0063D08C /* LocationsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0896563B2AFCE6E10063D08C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0896563C2AFCE6F70063D08C /* LocationsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8C5F3B5AC84803C138472219 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFABA842A60B679F6D51117E /* Pods-VIPERGoogleMapsExam.debug.xcconfig */,
+				A2759FAFFCEABA0D70EDC136 /* Pods-VIPERGoogleMapsExam.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 089656232AFCDE3E0063D08C /* Build configuration list for PBXNativeTarget "VIPERGoogleMapsExam" */;
 			buildPhases = (
+				F8DCCB7E0C2B5EB76DA73612 /* [CP] Check Pods Manifest.lock */,
 				0896560B2AFCDE3D0063D08C /* Sources */,
 				0896560C2AFCDE3D0063D08C /* Frameworks */,
 				0896560D2AFCDE3D0063D08C /* Resources */,
+				8B8551B094ACE9B6574145CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,34 +241,73 @@
 			files = (
 				0896561F2AFCDE3E0063D08C /* LaunchScreen.storyboard in Resources */,
 				0896561C2AFCDE3E0063D08C /* Assets.xcassets in Resources */,
-				0896561A2AFCDE3D0063D08C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B8551B094ACE9B6574145CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8DCCB7E0C2B5EB76DA73612 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPERGoogleMapsExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0896560B2AFCDE3D0063D08C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				089656172AFCDE3D0063D08C /* ViewController.swift in Sources */,
+				089656322AFCE17C0063D08C /* LocationCell.swift in Sources */,
 				089656132AFCDE3D0063D08C /* AppDelegate.swift in Sources */,
+				0896563D2AFCE6F70063D08C /* LocationsRouter.swift in Sources */,
+				089656372AFCE4AD0063D08C /* LocationsInteractor.swift in Sources */,
+				0896562E2AFCDFF90063D08C /* Location.swift in Sources */,
 				089656152AFCDE3D0063D08C /* SceneDelegate.swift in Sources */,
+				0896563A2AFCE64D0063D08C /* LocationsPresenter.swift in Sources */,
+				089656292AFCDE9D0063D08C /* LocationProtocol.swift in Sources */,
+				089656342AFCE2CE0063D08C /* LocationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		089656182AFCDE3D0063D08C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				089656192AFCDE3D0063D08C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0896561D2AFCDE3E0063D08C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +435,7 @@
 		};
 		089656242AFCDE3E0063D08C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFABA842A60B679F6D51117E /* Pods-VIPERGoogleMapsExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +445,7 @@
 				INFOPLIST_FILE = VIPERGoogleMapsExam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +463,7 @@
 		};
 		089656252AFCDE3E0063D08C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2759FAFFCEABA0D70EDC136 /* Pods-VIPERGoogleMapsExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,7 +473,7 @@
 				INFOPLIST_FILE = VIPERGoogleMapsExam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
