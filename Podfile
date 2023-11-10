@@ -6,5 +6,8 @@ target 'VIPERGoogleMapsExam' do
   use_frameworks!
 
   # Pods for VIPERGoogleMapsExam
-	pod 'GoogleMaps', '8.2.0'
+  pod 'GoogleMaps', '8.2.0'
+  pod 'Alamofire', '5.2.1'
+  pod 'SwiftyJSON', '~> 4.0'
+	pod 'GooglePlaces', '8.2.0'
 end

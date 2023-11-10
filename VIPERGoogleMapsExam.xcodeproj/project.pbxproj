@@ -8,34 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		07FC02AE5ADEFC8101540746 /* Pods_VIPERGoogleMapsExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDE8153C648A62643D94C9 /* Pods_VIPERGoogleMapsExam.framework */; };
+		088903452AFDC6DC00C104B1 /* GoogleMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088903442AFDC6DC00C104B1 /* GoogleMap.storyboard */; };
 		089656132AFCDE3D0063D08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656122AFCDE3D0063D08C /* AppDelegate.swift */; };
 		089656152AFCDE3D0063D08C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656142AFCDE3D0063D08C /* SceneDelegate.swift */; };
 		0896561C2AFCDE3E0063D08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0896561B2AFCDE3E0063D08C /* Assets.xcassets */; };
 		0896561F2AFCDE3E0063D08C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0896561D2AFCDE3E0063D08C /* LaunchScreen.storyboard */; };
-		089656292AFCDE9D0063D08C /* LocationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656282AFCDE9D0063D08C /* LocationProtocol.swift */; };
-		0896562E2AFCDFF90063D08C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896562D2AFCDFF90063D08C /* Location.swift */; };
-		089656322AFCE17C0063D08C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656312AFCE17C0063D08C /* LocationCell.swift */; };
-		089656342AFCE2CE0063D08C /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656332AFCE2CE0063D08C /* LocationsViewController.swift */; };
-		089656372AFCE4AD0063D08C /* LocationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656362AFCE4AD0063D08C /* LocationsInteractor.swift */; };
-		0896563A2AFCE64D0063D08C /* LocationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656392AFCE64D0063D08C /* LocationsPresenter.swift */; };
-		0896563D2AFCE6F70063D08C /* LocationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896563C2AFCE6F70063D08C /* LocationsRouter.swift */; };
+		089656292AFCDE9D0063D08C /* DestinationsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656282AFCDE9D0063D08C /* DestinationsProtocol.swift */; };
+		0896562E2AFCDFF90063D08C /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896562D2AFCDFF90063D08C /* Destination.swift */; };
+		089656322AFCE17C0063D08C /* DestinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656312AFCE17C0063D08C /* DestinationCell.swift */; };
+		089656342AFCE2CE0063D08C /* DestinationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656332AFCE2CE0063D08C /* DestinationsViewController.swift */; };
+		089656372AFCE4AD0063D08C /* DestinationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656362AFCE4AD0063D08C /* DestinationsInteractor.swift */; };
+		0896563A2AFCE64D0063D08C /* DestinationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656392AFCE64D0063D08C /* DestinationsPresenter.swift */; };
+		0896563D2AFCE6F70063D08C /* DestinationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896563C2AFCE6F70063D08C /* DestinationsRouter.swift */; };
+		089656672AFCFEFD0063D08C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656662AFCFEFD0063D08C /* MapViewController.swift */; };
+		089656692AFCFF490063D08C /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656682AFCFF490063D08C /* MapRouter.swift */; };
+		0896566B2AFCFFD20063D08C /* MapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896566A2AFCFFD20063D08C /* MapProtocol.swift */; };
+		0896566D2AFD02FD0063D08C /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896566C2AFD02FD0063D08C /* MapPresenter.swift */; };
+		0896566F2AFD046A0063D08C /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896566E2AFD046A0063D08C /* MapInteractor.swift */; };
+		089EFB692AFDF85000E220C2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EFB682AFDF85000E220C2 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07FDE8153C648A62643D94C9 /* Pods_VIPERGoogleMapsExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERGoogleMapsExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		088903442AFDC6DC00C104B1 /* GoogleMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleMap.storyboard; sourceTree = "<group>"; };
 		0896560F2AFCDE3D0063D08C /* VIPERGoogleMapsExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERGoogleMapsExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089656122AFCDE3D0063D08C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089656142AFCDE3D0063D08C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0896561B2AFCDE3E0063D08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0896561E2AFCDE3E0063D08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		089656202AFCDE3E0063D08C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		089656282AFCDE9D0063D08C /* LocationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProtocol.swift; sourceTree = "<group>"; };
-		0896562D2AFCDFF90063D08C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		089656312AFCE17C0063D08C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
-		089656332AFCE2CE0063D08C /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
-		089656362AFCE4AD0063D08C /* LocationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsInteractor.swift; sourceTree = "<group>"; };
-		089656392AFCE64D0063D08C /* LocationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsPresenter.swift; sourceTree = "<group>"; };
-		0896563C2AFCE6F70063D08C /* LocationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRouter.swift; sourceTree = "<group>"; };
+		089656282AFCDE9D0063D08C /* DestinationsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsProtocol.swift; sourceTree = "<group>"; };
+		0896562D2AFCDFF90063D08C /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		089656312AFCE17C0063D08C /* DestinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCell.swift; sourceTree = "<group>"; };
+		089656332AFCE2CE0063D08C /* DestinationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsViewController.swift; sourceTree = "<group>"; };
+		089656362AFCE4AD0063D08C /* DestinationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsInteractor.swift; sourceTree = "<group>"; };
+		089656392AFCE64D0063D08C /* DestinationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsPresenter.swift; sourceTree = "<group>"; };
+		0896563C2AFCE6F70063D08C /* DestinationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsRouter.swift; sourceTree = "<group>"; };
+		089656662AFCFEFD0063D08C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		089656682AFCFF490063D08C /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		0896566A2AFCFFD20063D08C /* MapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocol.swift; sourceTree = "<group>"; };
+		0896566C2AFD02FD0063D08C /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		0896566E2AFD046A0063D08C /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		089EFB682AFDF85000E220C2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		A2759FAFFCEABA0D70EDC136 /* Pods-VIPERGoogleMapsExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERGoogleMapsExam.release.xcconfig"; path = "Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam.release.xcconfig"; sourceTree = "<group>"; };
 		FFABA842A60B679F6D51117E /* Pods-VIPERGoogleMapsExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERGoogleMapsExam.debug.xcconfig"; path = "Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +97,7 @@
 			children = (
 				089656122AFCDE3D0063D08C /* AppDelegate.swift */,
 				089656142AFCDE3D0063D08C /* SceneDelegate.swift */,
+				089EFB672AFDF83E00E220C2 /* Services */,
 				089656262AFCDE6C0063D08C /* Modules */,
 				0896561B2AFCDE3E0063D08C /* Assets.xcassets */,
 				0896561D2AFCDE3E0063D08C /* LaunchScreen.storyboard */,
@@ -94,12 +109,13 @@
 		089656262AFCDE6C0063D08C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				089656272AFCDE800063D08C /* Location */,
+				089656272AFCDE800063D08C /* Destination */,
+				089656602AFCFCBD0063D08C /* Map */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		089656272AFCDE800063D08C /* Location */ = {
+		089656272AFCDE800063D08C /* Destination */ = {
 			isa = PBXGroup;
 			children = (
 				0896562A2AFCDF180063D08C /* Protocol */,
@@ -109,13 +125,13 @@
 				0896562C2AFCDFE60063D08C /* Entity */,
 				0896563B2AFCE6E10063D08C /* Router */,
 			);
-			path = Location;
+			path = Destination;
 			sourceTree = "<group>";
 		};
 		0896562A2AFCDF180063D08C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				089656282AFCDE9D0063D08C /* LocationProtocol.swift */,
+				089656282AFCDE9D0063D08C /* DestinationsProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -123,7 +139,7 @@
 		0896562C2AFCDFE60063D08C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				0896562D2AFCDFF90063D08C /* Location.swift */,
+				0896562D2AFCDFF90063D08C /* Destination.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -132,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				089656302AFCE1660063D08C /* Cell */,
-				089656332AFCE2CE0063D08C /* LocationsViewController.swift */,
+				089656332AFCE2CE0063D08C /* DestinationsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,7 +156,7 @@
 		089656302AFCE1660063D08C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				089656312AFCE17C0063D08C /* LocationCell.swift */,
+				089656312AFCE17C0063D08C /* DestinationCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -148,7 +164,7 @@
 		089656352AFCE4840063D08C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				089656362AFCE4AD0063D08C /* LocationsInteractor.swift */,
+				089656362AFCE4AD0063D08C /* DestinationsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -156,7 +172,7 @@
 		089656382AFCE6330063D08C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				089656392AFCE64D0063D08C /* LocationsPresenter.swift */,
+				089656392AFCE64D0063D08C /* DestinationsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -164,9 +180,70 @@
 		0896563B2AFCE6E10063D08C /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				0896563C2AFCE6F70063D08C /* LocationsRouter.swift */,
+				0896563C2AFCE6F70063D08C /* DestinationsRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		089656602AFCFCBD0063D08C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				089656652AFCFCF80063D08C /* Protocol */,
+				089656642AFCFCF30063D08C /* View */,
+				089656632AFCFCE60063D08C /* Interactor */,
+				089656622AFCFCDF0063D08C /* Presenter */,
+				089656612AFCFCD40063D08C /* Router */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		089656612AFCFCD40063D08C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				089656682AFCFF490063D08C /* MapRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		089656622AFCFCDF0063D08C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0896566C2AFD02FD0063D08C /* MapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		089656632AFCFCE60063D08C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0896566E2AFD046A0063D08C /* MapInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		089656642AFCFCF30063D08C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				089656662AFCFEFD0063D08C /* MapViewController.swift */,
+				088903442AFDC6DC00C104B1 /* GoogleMap.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		089656652AFCFCF80063D08C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0896566A2AFCFFD20063D08C /* MapProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		089EFB672AFDF83E00E220C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				089EFB682AFDF85000E220C2 /* LocationManager.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		8C5F3B5AC84803C138472219 /* Pods */ = {
@@ -175,7 +252,6 @@
 				FFABA842A60B679F6D51117E /* Pods-VIPERGoogleMapsExam.debug.xcconfig */,
 				A2759FAFFCEABA0D70EDC136 /* Pods-VIPERGoogleMapsExam.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,6 +267,7 @@
 				0896560C2AFCDE3D0063D08C /* Frameworks */,
 				0896560D2AFCDE3D0063D08C /* Resources */,
 				8B8551B094ACE9B6574145CF /* [CP] Copy Pods Resources */,
+				A624B233A11DEE0BAEE2554C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088903452AFDC6DC00C104B1 /* GoogleMap.storyboard in Resources */,
 				0896561F2AFCDE3E0063D08C /* LaunchScreen.storyboard in Resources */,
 				0896561C2AFCDE3E0063D08C /* Assets.xcassets in Resources */,
 			);
@@ -262,6 +340,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A624B233A11DEE0BAEE2554C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8DCCB7E0C2B5EB76DA73612 /* [CP] Check Pods Manifest.lock */ = {
@@ -293,15 +388,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				089656322AFCE17C0063D08C /* LocationCell.swift in Sources */,
+				089656322AFCE17C0063D08C /* DestinationCell.swift in Sources */,
 				089656132AFCDE3D0063D08C /* AppDelegate.swift in Sources */,
-				0896563D2AFCE6F70063D08C /* LocationsRouter.swift in Sources */,
-				089656372AFCE4AD0063D08C /* LocationsInteractor.swift in Sources */,
-				0896562E2AFCDFF90063D08C /* Location.swift in Sources */,
+				089EFB692AFDF85000E220C2 /* LocationManager.swift in Sources */,
+				0896566D2AFD02FD0063D08C /* MapPresenter.swift in Sources */,
+				0896563D2AFCE6F70063D08C /* DestinationsRouter.swift in Sources */,
+				089656672AFCFEFD0063D08C /* MapViewController.swift in Sources */,
+				0896566F2AFD046A0063D08C /* MapInteractor.swift in Sources */,
+				0896566B2AFCFFD20063D08C /* MapProtocol.swift in Sources */,
+				089656372AFCE4AD0063D08C /* DestinationsInteractor.swift in Sources */,
+				0896562E2AFCDFF90063D08C /* Destination.swift in Sources */,
 				089656152AFCDE3D0063D08C /* SceneDelegate.swift in Sources */,
-				0896563A2AFCE64D0063D08C /* LocationsPresenter.swift in Sources */,
-				089656292AFCDE9D0063D08C /* LocationProtocol.swift in Sources */,
-				089656342AFCE2CE0063D08C /* LocationsViewController.swift in Sources */,
+				0896563A2AFCE64D0063D08C /* DestinationsPresenter.swift in Sources */,
+				089656692AFCFF490063D08C /* MapRouter.swift in Sources */,
+				089656292AFCDE9D0063D08C /* DestinationsProtocol.swift in Sources */,
+				089656342AFCE2CE0063D08C /* DestinationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
