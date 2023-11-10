@@ -11,7 +11,6 @@ class LocationManager: NSObject {
     static let shared = LocationManager()
     
     private var locationManager = CLLocationManager()
-    private var currentLocation: CLLocation?
     
     private override init() {
         super.init()
@@ -32,11 +31,10 @@ class LocationManager: NSObject {
 
 extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let newLocation = locations.last else { return }
-        currentLocation = newLocation
+        // Handle location updates if needed
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error)
+        // Handle location errors if needed
     }
 }

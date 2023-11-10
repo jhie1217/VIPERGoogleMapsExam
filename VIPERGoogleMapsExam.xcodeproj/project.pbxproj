@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07FC02AE5ADEFC8101540746 /* Pods_VIPERGoogleMapsExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FDE8153C648A62643D94C9 /* Pods_VIPERGoogleMapsExam.framework */; };
-		088903452AFDC6DC00C104B1 /* GoogleMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088903442AFDC6DC00C104B1 /* GoogleMap.storyboard */; };
 		089656132AFCDE3D0063D08C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656122AFCDE3D0063D08C /* AppDelegate.swift */; };
 		089656152AFCDE3D0063D08C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089656142AFCDE3D0063D08C /* SceneDelegate.swift */; };
 		0896561C2AFCDE3E0063D08C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0896561B2AFCDE3E0063D08C /* Assets.xcassets */; };
@@ -26,11 +25,11 @@
 		0896566D2AFD02FD0063D08C /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896566C2AFD02FD0063D08C /* MapPresenter.swift */; };
 		0896566F2AFD046A0063D08C /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0896566E2AFD046A0063D08C /* MapInteractor.swift */; };
 		089EFB692AFDF85000E220C2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089EFB682AFDF85000E220C2 /* LocationManager.swift */; };
+		08C044AC2AFE45880041E33B /* GoogleMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C044AB2AFE45880041E33B /* GoogleMap.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07FDE8153C648A62643D94C9 /* Pods_VIPERGoogleMapsExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPERGoogleMapsExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		088903442AFDC6DC00C104B1 /* GoogleMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleMap.storyboard; sourceTree = "<group>"; };
 		0896560F2AFCDE3D0063D08C /* VIPERGoogleMapsExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERGoogleMapsExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089656122AFCDE3D0063D08C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089656142AFCDE3D0063D08C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		0896566C2AFD02FD0063D08C /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		0896566E2AFD046A0063D08C /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		089EFB682AFDF85000E220C2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		08C044AB2AFE45880041E33B /* GoogleMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleMap.storyboard; sourceTree = "<group>"; };
 		A2759FAFFCEABA0D70EDC136 /* Pods-VIPERGoogleMapsExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERGoogleMapsExam.release.xcconfig"; path = "Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam.release.xcconfig"; sourceTree = "<group>"; };
 		FFABA842A60B679F6D51117E /* Pods-VIPERGoogleMapsExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPERGoogleMapsExam.debug.xcconfig"; path = "Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				089656662AFCFEFD0063D08C /* MapViewController.swift */,
-				088903442AFDC6DC00C104B1 /* GoogleMap.storyboard */,
+				08C044AB2AFE45880041E33B /* GoogleMap.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,7 +267,6 @@
 				0896560C2AFCDE3D0063D08C /* Frameworks */,
 				0896560D2AFCDE3D0063D08C /* Resources */,
 				8B8551B094ACE9B6574145CF /* [CP] Copy Pods Resources */,
-				A624B233A11DEE0BAEE2554C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,7 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				088903452AFDC6DC00C104B1 /* GoogleMap.storyboard in Resources */,
+				08C044AC2AFE45880041E33B /* GoogleMap.storyboard in Resources */,
 				0896561F2AFCDE3E0063D08C /* LaunchScreen.storyboard in Resources */,
 				0896561C2AFCDE3E0063D08C /* Assets.xcassets in Resources */,
 			);
@@ -340,23 +339,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A624B233A11DEE0BAEE2554C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPERGoogleMapsExam/Pods-VIPERGoogleMapsExam-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8DCCB7E0C2B5EB76DA73612 /* [CP] Check Pods Manifest.lock */ = {

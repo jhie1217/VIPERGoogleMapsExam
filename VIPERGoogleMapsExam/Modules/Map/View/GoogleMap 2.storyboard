@@ -16,27 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-u2-CuB" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-bF-1ca" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="lAW-u2-CuB" secondAttribute="bottom" id="fSJ-gq-CDs"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lAW-u2-CuB" secondAttribute="trailing" id="laR-ym-OKR"/>
-                            <constraint firstItem="lAW-u2-CuB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lfP-k8-m7v"/>
-                            <constraint firstItem="lAW-u2-CuB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="vym-au-XhO"/>
+                            <constraint firstItem="bNT-bF-1ca" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="47" id="7Xw-dU-rzX"/>
+                            <constraint firstItem="bNT-bF-1ca" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Wgv-6t-vbz"/>
+                            <constraint firstAttribute="bottom" secondItem="bNT-bF-1ca" secondAttribute="bottom" constant="34" id="aYJ-IW-jPE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bNT-bF-1ca" secondAttribute="trailing" id="fF0-80-Dfh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="viewMap" destination="lAW-u2-CuB" id="0Pl-07-rdg"/>
+                        <outlet property="mapView" destination="bNT-bF-1ca" id="dR5-LE-SaN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="-2"/>
+            <point key="canvasLocation" x="140" y="4"/>
         </scene>
     </scenes>
     <resources>

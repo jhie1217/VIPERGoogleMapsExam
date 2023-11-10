@@ -27,7 +27,7 @@ class DestinationCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupLayout() {
+    func setupLayout() {
         selectionStyle = .none
         destinationLabel.numberOfLines = 0
         destinationLabel.font = UIFont.boldSystemFont(ofSize: 16)

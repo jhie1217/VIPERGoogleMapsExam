@@ -13,6 +13,7 @@ class MapRouter: MapPresenterToRouterProtocol {
         let mapStoryboard = UIStoryboard(name: "GoogleMap", bundle: nil)
         let view = mapStoryboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
         
+//        let view = MapViewController()
         let presenter: MapViewToPresenterProtocol & MapInteractorToPresenterProtocol = MapPresenter()
         let interactor: MapPresenterToInteractorProtocol = MapInteractor()
         let router: MapPresenterToRouterProtocol = MapRouter()

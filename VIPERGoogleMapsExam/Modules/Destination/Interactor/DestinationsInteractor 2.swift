@@ -34,4 +34,6 @@ class DestinationsInteractor: DestinationsPresenterToInteractorProtocol {
     func retrieveDestination(at index: Int) {
         self.presenter?.getDestinationsSuccess(self.destinations[index])
     }
+    
+    
 }
