@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import CoreLocation
+import GoogleMaps
 
 class MapPresenter: MapViewToPresenterProtocol {
     
@@ -13,20 +15,30 @@ class MapPresenter: MapViewToPresenterProtocol {
     var interactor: MapPresenterToInteractorProtocol?
     var router: MapPresenterToRouterProtocol?
     
-    func viewDidLoad() {
-        interactor?.getMapData()
+    func viewDidLoad(with map: GMSMapView) {
+        interactor?.fetchMapData(with: map)
     }
+    
+    func getOrigin() -> CLLocation? {
+        interactor?.origin ?? CLLocation(latitude: 0.0, longitude: 0.0)
+    }
+    
+    func getDestination() -> Destination? {
+        interactor?.destination
+    }
+    
+//    func getRoutes() -> NSArray {
+//        interactor?.routes ?? NSArray()
+//    }
 }
 
 extension MapPresenter: MapInteractorToPresenterProtocol {
-    func success(location: Destination) {
-        view?.setupMap(
-            with: location.name,
-            latitude: location.latitude,
-            longitude: location.longitude)
+    
+    func mapDataFetched() {
+        view?.showMap()
     }
     
     func fail(errorMessage: String) {
-        view?.error(message: errorMessage)
+        view?.showError()
     }
 }

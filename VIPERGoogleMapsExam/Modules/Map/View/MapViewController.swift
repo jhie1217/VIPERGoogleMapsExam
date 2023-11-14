@@ -7,7 +7,6 @@
 
 import UIKit
 import CoreLocation
-//import GooglePlaces
 import GoogleMaps
 
 class MapViewController: UIViewController {
@@ -18,94 +17,42 @@ class MapViewController: UIViewController {
     @IBOutlet private weak var viewMap: GMSMapView!
     
     private var marker = GMSMarker()
-    private var sourceLatitude = 0.0
-    private var sourceLongitude = 0.0
-    private var destination = ""
-    private var destinationLatitude = 0.0
-    private var destinationLongitude = 0.0
     private var rectangle = GMSPolyline()
-    let locationManager = LocationManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sourceLatitude = locationManager.getCurrentLocation()?.coordinate.latitude ?? 0.0
-        sourceLongitude = locationManager.getCurrentLocation()?.coordinate.longitude ?? 0.0
-        
-        presenter?.viewDidLoad()
-        drawPath()
-        setupMap()
+        presenter?.viewDidLoad(with: viewMap)
     }
     
     private func setupMap() {
-        self.viewMap.camera = GMSCameraPosition(latitude: self.sourceLatitude, longitude: self.sourceLongitude, zoom: 10.0)
+        self.viewMap.camera = GMSCameraPosition(
+            latitude: presenter?.getOrigin()?.coordinate.latitude ?? 0.0,
+            longitude: presenter?.getOrigin()?.coordinate.longitude ?? 0.0, zoom: 10.0)
         self.viewMap.isMyLocationEnabled = true
-    }
-    
-    private func drawPath() {
-        let origin = "\(sourceLatitude),\(sourceLongitude)"
-        let destination = "\(destinationLatitude),\(destinationLongitude)"
-        
-        let urlString = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&key=AIzaSyD3OFyan7RVBHQqPrls9i-79unOp9yptT4"
-        
-        let url = URL(string: urlString)
-        URLSession.shared.dataTask(with: url!, completionHandler: {
-            (data, response, error) in
-            if(error != nil) {
-                print("error")
-            } else {
-                DispatchQueue.main.async {
-                    self.viewMap.clear()
-                    self.addSourceDestinationMarkers()
-                }
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) as! [String : AnyObject]
-                    let routes = json["routes"] as! NSArray
-                    
-                    OperationQueue.main.addOperation({
-                        for route in routes {
-                            let routeOverviewPolyline:NSDictionary = (route as! NSDictionary).value(forKey: "overview_polyline") as! NSDictionary
-                            let points = routeOverviewPolyline.object(forKey: "points")
-                            let path = GMSPath.init(fromEncodedPath: points! as! String)
-                            let polyline = GMSPolyline.init(path: path)
-                            polyline.strokeWidth = 3
-                            polyline.strokeColor = UIColor(red: 50/255, green: 165/255, blue: 102/255, alpha: 1.0)
-                            polyline.map = self.viewMap
-                        }
-                    })
-                } catch let error as NSError {
-                    print("error:\(error)")
-                }
-            }
-        }).resume()
     }
     
     private func addSourceDestinationMarkers(){
         let markerSource = GMSMarker()
-        markerSource.position = CLLocationCoordinate2D(latitude: destinationLatitude, longitude: destinationLongitude)
+        markerSource.position = CLLocationCoordinate2D(
+            latitude: presenter?.getDestination()?.latitude ?? 0.0,
+            longitude: presenter?.getDestination()?.longitude ?? 0.0)
         markerSource.icon = UIImage(named: "markera")
-        markerSource.title = destination
+        markerSource.title = presenter?.getDestination()?.name
         markerSource.map = viewMap
     }
 }
 
 extension MapViewController: MapPresenterToViewProtocol {
-    func setupMap(with location: String, latitude: Double, longitude: Double) {
-        destination = location
-        destinationLatitude = latitude
-        destinationLongitude = longitude
+    
+    func showMap() {
+        setupMap()
+        addSourceDestinationMarkers()
     }
     
-    func error(message: String) {
-        print(message)
-    }
-}
-
-extension MapViewController: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let userLocation: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        sourceLatitude = userLocation.latitude
-        sourceLongitude = userLocation.longitude
+    func showError() {
+        let alert = UIAlertController(title: "Alert", message: "Problem Fetching Map Data", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }

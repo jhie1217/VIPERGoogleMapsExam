@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CoreLocation
+import GoogleMaps
 
 protocol MapViewToPresenterProtocol: AnyObject {
     
@@ -13,24 +15,27 @@ protocol MapViewToPresenterProtocol: AnyObject {
     var interactor: MapPresenterToInteractorProtocol? { get set }
     var router: MapPresenterToRouterProtocol? { get set }
     
-    func viewDidLoad()
+    func viewDidLoad(with map: GMSMapView)
+    func getOrigin() -> CLLocation?
+    func getDestination() -> Destination?
 }
 
 protocol MapPresenterToViewProtocol: AnyObject {
-    func setupMap(with location: String, latitude: Double, longitude: Double)
-    func error(message: String)
+    func showMap()
+    func showError()
 }
 
 protocol MapPresenterToInteractorProtocol: AnyObject {
     var presenter: MapInteractorToPresenterProtocol? { get set }
     
+    var origin: CLLocation? { get }
     var destination: Destination? { get set }
     
-    func getMapData()
+    func fetchMapData(with map: GMSMapView)
 }
 
 protocol MapInteractorToPresenterProtocol: AnyObject {
-    func success(location: Destination)
+    func mapDataFetched()
     func fail(errorMessage: String)
 }
 
